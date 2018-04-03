@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Streams</title>
+    <%= csrf_meta_tags %>
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body class="fix-header fix-sidebar">
+    <div class="preloader">
+        <svg class="circular" viewBox="25 25 50 50">
+      <circle class="path" cx="50" cy="50" r="20" fill="none" stroke-width="2" stroke-miterlimit="10" /> </svg>
+    </div>
+    <div id="main-wrapper">
+      <%= render "shared/header" %>
+      <%= render "shared/sidebar" %>
+      <div class="page-wrapper">
+
+    <%= yield %>
+    <!-- footer -->
+    <footer class="footer"> © 2018 All rights reserved. Developed by <a href="https://zonia.co">Zonia Solutions</a></footer>
+    <!-- End footer -->
+  </div>
+  </div>
+  </body>
+</html>
